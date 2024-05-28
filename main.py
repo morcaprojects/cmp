@@ -53,7 +53,8 @@ def generate_summary_t5(text):
 
 def news(key, new):
     st.subheader(str(key + 1) + ". " + new[1])
-    st.button("Generate summary for story " + str(key + 1) + " with T5", on_click=generate_summary_t5(new[2]))
+    if st.button("Generate summary for story " + str(key + 1) + " with T5"):
+        generate_summary_t5(new[2])
     st.button("Generate summary for story " + str(key + 1) + " with Pegasus")
 
 
