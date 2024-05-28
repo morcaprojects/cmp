@@ -1,3 +1,5 @@
+!pip install transformers
+
 import streamlit as st
 import pandas as pd
 from transformers import T5Tokenizer, AutoModelForSeq2SeqLM
