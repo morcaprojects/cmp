@@ -1,3 +1,5 @@
 transformers
 nltk
 torch
+transformers[sentencepiece]
+sentencepiece
