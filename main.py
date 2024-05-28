@@ -9,8 +9,8 @@ model_name = 'morca/t5-ft'
 
 def load_model():
     print("loading model...")
-    tokenizer = T5Tokenizer.from_pretrained(model_name, use_auth_token=token)
-    model = AutoModelForSeq2SeqLM.from_pretrained(model_name, use_auth_token=token)
+    tokenizer = T5Tokenizer.from_pretrained(model_name)
+    model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
     nltk.download('punkt')
     print("Model loaded!")
     return tokenizer, model
