@@ -49,7 +49,7 @@ def generate_summary_t5(text):
     if len(summary) > 0:
         with st.container():
             st.subheader("Generated summary")
-            st.markdown(st.session_state.summary)
+            st.markdown(summary)
 
 def news(key, new):
     st.subheader(str(key + 1) + ". " + new[1])
