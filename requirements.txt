@@ -3,4 +3,5 @@ nltk
 torch
 transformers[sentencepiece]
 sentencepiece
-openpyxl
+requests
+bs4
